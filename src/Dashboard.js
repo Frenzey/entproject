@@ -39,7 +39,7 @@ componentDidMount() {
           <Navbar bg="white" expand="lg" variant="light" className="navbar navbar-dark navbar-expand-lg fixed-top bg-white portfolio-navbar gradient collapsed">
               <div className="container">
               <Navbar.Brand className="navbar-brand logo style">
-                  Projet ENT
+                  Projet ENT <span>-User: {app.auth().currentUser.email} </span>
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="basic-navbar-nav"/>
               <Navbar.Collapse id="basic-navbar-nav">
@@ -51,7 +51,7 @@ componentDidMount() {
                   </Nav>
               </Navbar.Collapse>
               </div>
-              <button onClick={() => app.auth().signOut()}>Sign out</button>
+              <button className="btn-info btn btn-user" onClick={() => app.auth().signOut()}>Se déconnecter</button>
           </Navbar>
             {/*
             <div className="infocont">
