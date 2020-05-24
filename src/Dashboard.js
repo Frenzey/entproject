@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
 import { Link, withRouter } from 'react-router-dom'
-import '../components/assets/bootstrap/css/bootstrap.min.css'
-import '../components/assets/bootstrap/css/style.css'
+import './assets/bootstrap/css/bootstrap.min.css'
+import './assets/bootstrap/css/style.css'
 import {Navbar, Nav} from "react-bootstrap";
+import app from "./base";
 
 class Dashboard extends Component {
 
@@ -50,8 +51,9 @@ componentDidMount() {
                   </Nav>
               </Navbar.Collapse>
               </div>
+              <button onClick={() => app.auth().signOut()}>Sign out</button>
           </Navbar>
-
+            {/*
             <div className="infocont">
             <div className="elm info">
             <h1 id="info">Informations véhicules</h1>
@@ -74,7 +76,7 @@ componentDidMount() {
                         frameBorder="0" width="100%" height="1000" allowTransparency></iframe>
             </div>
             </div>
-
+*/}
 
         </div>
       )
