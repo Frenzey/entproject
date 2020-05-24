@@ -53,7 +53,6 @@ componentDidMount() {
               </div>
               <button className="btn-info btn btn-user" onClick={() => app.auth().signOut()}>Se déconnecter</button>
           </Navbar>
-            {/*
             <div className="infocont">
             <div className="elm info">
             <h1 id="info">Informations véhicules</h1>
@@ -76,7 +75,6 @@ componentDidMount() {
                         frameBorder="0" width="100%" height="1000" allowTransparency></iframe>
             </div>
             </div>
-*/}
 
         </div>
       )
